@@ -5,19 +5,9 @@
     padding: 0;
 }
 
-body {
-    margin: 1rem; 
-    width: 90%;
-    min-width: 350px;
-    max-width: 450px;
-    /* border: solid 10px #232c33ff;
-    padding: 1rem; */
-    /* background-color: #60656fff; */
-}
-
 header {
     display: flex;
-    height: 75px;
+    height: 100px;
     border: solid 5px#60656fff;
     margin-bottom: 1.5rem;
     border-radius: 5px;
@@ -26,10 +16,16 @@ header {
 }
 
 .calc-color {
+    margin: 1rem; 
+    width: 90%;
+    min-width: 350px;
+    max-width: 450px;
     background-color: rgba(96, 101, 111, 0.5);
     padding: 1rem;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-shadow: 3px 3px 3px #232c33ff;
+    background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.75));
+    border-radius: 10px;
 }
 
 .clear-btn {
@@ -39,6 +35,12 @@ header {
     font-family: 'Orbitron', sans-serif;
     color: #232c33ff;
     border-radius: 5px;
+    height: 85px;
+    background-color: #a6d9f7ff;
+    border: solid 6px #60656fff;
+    box-shadow: 3px 2px 2px #232c33ff;
+    background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.5));
+    margin: 1.5px 0px 0px 1.5px;
 }
 
 .display {
@@ -72,15 +74,7 @@ li button {
 li {
     width: 25%;
     height: 100px;
-    list-style: none;
-    
-}
-
-.clear-btn {
-    background-color: #a6d9f7ff;
-    border-right: solid 5px #60656fff;
-    box-shadow: 3px 2px 2px #232c33ff;
-    background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.5))
+    list-style: none;   
 }
 
 .nonnum {

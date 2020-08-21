@@ -79,6 +79,8 @@ li {
 .clear-btn {
     background-color: #a6d9f7ff;
     border-right: solid 5px #60656fff;
+    box-shadow: 3px 2px 2px #232c33ff;
+    background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.5))
 }
 
 .nonnum {

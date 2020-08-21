@@ -8,10 +8,10 @@
 header {
     display: flex;
     height: 100px;
-    border: solid 5px#60656fff;
+    border: 0.75rem outset #a7b1c280;
     margin-bottom: 1.5rem;
     border-radius: 5px;
-    box-shadow: 3px 2px 2px #232c33ff;
+
 
 }
 
@@ -20,12 +20,13 @@ header {
     width: 90%;
     min-width: 350px;
     max-width: 450px;
-    background-color: rgba(96, 101, 111, 0.5);
+    background-color: #8a93a280;
     padding: 1rem;
     /* border-radius: 5px; */
     box-shadow: 3px 3px 3px #232c33ff;
     background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.75));
-    border-radius: 10px;
+    border: 1rem outset #6b717b80;
+    border-radius: 15px;
 }
 
 .clear-btn {
@@ -34,13 +35,11 @@ header {
     font-size: 3rem;
     font-family: 'Orbitron', sans-serif;
     color: #232c33ff;
-    border-radius: 5px;
-    height: 85px;
     background-color: #a6d9f7ff;
-    border: solid 6px #60656fff;
-    box-shadow: 3px 2px 2px #232c33ff;
+    border: 0.5rem outset #a6d9f7ff;
+    border-radius: 5px;
+    /* box-shadow: 3px 2px 2px #232c33ff; */
     background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.5));
-    margin: 1.5px 0px 0px 1.5px;
 }
 
 .display {
@@ -50,12 +49,16 @@ header {
     font-family: 'Orbitron', sans-serif;
     color: #232c33ff;
     overflow: hidden;
-    border-radius: 5px;
+    background-color: #d3edfc;
+    background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.5));
+    border: 0.25rem outset #d3edfc;
+    border-radius: 5px;    
 }
 
 .buttons {
     display: flex;
     flex-flow: wrap;
+    border: 0.5rem inset #6b717b80;
 }
 
 li button {
@@ -66,9 +69,20 @@ li button {
     font-family: 'Orbitron', sans-serif;
     color: #232c33ff;
     border-radius: 10px;
-    box-shadow: 3px 2px 2px #232c33ff;
-    background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.75))
+    /* box-shadow: 3px 2px 2px #232c33ff; */
+    background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.75));
+    border: 0.5rem outset #dadff7ff;
+    border-radius: 5px;
+}
 
+button:hover {
+    font-size: 3.25rem;
+    background-image: linear-gradient(to bottom right, rgba(200,200,200,0), rgba(100,100,100,0.5));
+}
+
+button:focus {
+    outline: 0;
+    box-shadow: inset 0px 0px 15px #232c33ff;
 }
 
 li {
@@ -79,8 +93,13 @@ li {
 
 .nonnum {
     background-color: #defffcff;
+    border: 0.5rem outset #defffcff;
+    border-radius: 5px;
 }
 
 .math {
     background-color: #a6d9f7ff;
+    border: 0.5rem outset #a6d9f7ff;
+    border-radius: 5px;
 }
+

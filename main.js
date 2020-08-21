@@ -31,7 +31,6 @@ function pushable(which) {
     }
 }
 
-
 pushable(buttons)
 
 clear.addEventListener("click", function () {

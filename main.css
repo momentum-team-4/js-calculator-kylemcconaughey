@@ -5,22 +5,13 @@
     padding: 0;
 }
 
-/* CSS HEX 
---light-cyan: #defffcff;
---lavender-web: #dadff7ff;
---gunmetal: #232c33ff;
---uranian-blue: #a6d9f7ff;
---black-coral: #60656fff;
-*/
-
-
 body {
     margin: 1rem; 
-    width: 35%;
+    width: 90%;
     min-width: 350px;
-    max-width: 550px;
-    border: solid 10px #232c33ff;
-    padding: 1rem;
+    max-width: 450px;
+    /* border: solid 10px #232c33ff;
+    padding: 1rem; */
     /* background-color: #60656fff; */
 }
 
@@ -29,10 +20,17 @@ header {
     height: 75px;
     border: solid 5px#60656fff;
     margin-bottom: 1.5rem;
-    
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px #232c33ff;
+
 }
 
-
+.calc-color {
+    background-color: rgba(96, 101, 111, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #232c33ff;
+}
 
 .clear-btn {
     width: 25%;
@@ -40,6 +38,7 @@ header {
     font-size: 3rem;
     font-family: 'Orbitron', sans-serif;
     color: #232c33ff;
+    border-radius: 5px;
 }
 
 .display {
@@ -48,29 +47,33 @@ header {
     font-size: 3rem;
     font-family: 'Orbitron', sans-serif;
     color: #232c33ff;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .buttons {
     display: flex;
     flex-flow: wrap;
-    /* height: 400px; */
-
 }
 
 li button {
     font-size: 3rem;
     background-color: #dadff7ff;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     font-family: 'Orbitron', sans-serif;
     color: #232c33ff;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px #232c33ff;
+    background-image: linear-gradient(to bottom right, rgba(100,100,100,0), rgba(100,100,100,0.75))
+
 }
 
 li {
     width: 25%;
     height: 100px;
     list-style: none;
-
+    
 }
 
 .clear-btn {
@@ -84,99 +87,4 @@ li {
 
 .math {
     background-color: #a6d9f7ff;
-}
-
-.seven {
-    order: 1;
-}
-.eight {
-    order: 2;
-}
-.nine {
-    order: 3;
-}
-.divide {
-    order: 4;
-}
-.four {
-    order: 5;
-}
-.five {
-    order: 6;
-}
-.six {
-    order: 7;
-}
-.times {
-    order: 8;
-}
-.one {
-    order: 9;
-}
-.two {
-    order: 10;
-}
-.three {
-    order: 11;
-}
-.minus {
-    order: 12;
-}
-.power {
-    order: 19;
-}
-.zero {
-    order: 13;
-}
-.dot {
-    order: 14;
-}
-.plus {
-    order: 16;
-}
-.leftpar {
-    order: 17;
-}
-.rightpar {
-    order: 18;
-}
-.modulo {
-    order: 15;
-}
-.equals {
-    order: 20;
-}
-
-
-/* CSS HEX 
---light-cyan: #defffcff;
---lavender-web: #dadff7ff;
---gunmetal: #232c33ff;
---uranian-blue: #a6d9f7ff;
---black-coral: #60656fff;
-*/
-
-.colortest {
-    display: none;
-}
-
-.lightcyan {
-    background-color: #defffcff;
-    order: 21
-}
-.lavender {
-    background-color: #dadff7ff;
-    order: 22
-}
-.gunmetal {
-    background-color: #232c33ff;
-    order: 23
-}
-.uranian {
-    background-color: #a6d9f7ff;
-    order: 24
-}
-.blackcoral {
-    background-color: #60656fff;
-    order: 25
 }
